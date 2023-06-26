@@ -1,6 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.row{
+  max-width: 90%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+
+/* ===============================footer section========================= */
+footer{
+  border: 1px solid rgb(230, 227, 227);
+  padding: 2.5rem 0;
+}
+h3{
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+p{
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+/* .footer_column p{
+  padding-right: 0.8rem;
+} */
+.footer_wrapper .footer_column{
+  width: 30%;
+  padding: 0 0.5rem;
+  /* border: 2px solid blue; */
+}
+.footer_wrapper .footer_column_b{
+  width: 12%;
+  /* border: 2px solid blue; */
+}
+
+.footer_column_b ul{
+  list-style: none;
+}
+
+.footer_column_b ul li{
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.footer_column_b ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.deeco_logo{
+  font-size: 1rem;
+  border: 3px solid black;
+  font-weight: bold;
+  display: inline;
+  padding: 0 0.5rem;
+}
+
+.footer_social_icon{
+  width: 60%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.footer_social_icon i{
+  font-size: 0.65rem;
+  border: 1px solid blue;
+  padding: 4px;
+  color: blue;
+  border-radius: 50%;
 }

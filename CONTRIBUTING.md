@@ -4,7 +4,7 @@
 
 # How to contribute.
 
-1. Select an issue you wish to handle.
+1. Select an issue you wish to handle.cle
 2. Assign the issue to yourself by commenting on the issue that you are taking charge of handling it.
 3. Create a new branch for that issue(create a new branch for every new issue you pick). The branch naming should follow this pattern - start with the number of the issue, followed by an underscore and then the title of that issue e.g.
 
@@ -14,7 +14,7 @@
 
 > ENSURE TO MAKE A PULL REQUEST FOR EVERY ISSUE YOU RESOLVE/HANDLE.
 
-# Commit patterns.
+# Commit patterns.git
 
 Commits on this project are to be well structured. The following rules must be followed when making commits, or else your pull request WILL BE CLOSED. Note that all commit messages must be in lower-case letters.
 

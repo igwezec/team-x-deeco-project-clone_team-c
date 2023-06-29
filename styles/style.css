@@ -4,15 +4,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: 2px solid red;*/
-
 }
 
 body{
   font-family: 'Nunito', sans-serif;
+}
+
+.row{
+  max-width: 90%;
+  margin: 0 auto;
+  /*border: 2px solid red; */
+}
+
+/*================================Header section=======================*/
+.top-nav-container{
+  background-color: rgb(43, 135, 215);
+  /* padding: 10px 0; */
+}
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(43, 135, 215);
+  padding: 10px 0;
+}
+.top-nav-btn{
+  display: flex;
+}
+.top-nav-btn button{
+  background-color: rgb(214, 30, 211);
+  border: none;
+  padding: 0.8rem 2rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 1.2rem;
+}
+.top-nav-btn i{
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+.top-nav-cart{
+  display: flex;
+  align-items: center;
+}
+.top-nav-cart a{
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+nav ul{
+  display: flex;
+  padding-left: 4rem;
+  align-items: center;
+}
+nav ul li{
+  list-style: none;
+  padding: 10px;
+}
+nav .left-nav{
+  display: flex;
+  align-items: center;
+}
 
 /*================================trending section=======================*/
-
 
 .hero-section{
   background: url(../assests/images/hero.jpg) no-repeat center;
@@ -77,21 +140,29 @@ body{
   text-decoration: none;
   color: #FFFFFF;
   background-color: rgb(112, 191, 86);
+  border-radius: 5px;
   width: 100%;
   display: block;
   text-align: center;
   padding: 1rem 3rem;
 }
 .proceed-to-cart-button{
-  margin-bottom: 60px;
-  font-size: 14px;
-  text-decoration: none;
+  margin: 3rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.proceed-to-cart-button a{
   color: #FFFFFF;
-  background-color: rgb(112, 191, 86);
-  
-  width: 30%;
+  font-size: 1rem;
+  font-weight: bold;
   text-align: center;
-  padding: 1rem 3rem;
+  width: 30%;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: rgb(112, 191, 86);
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px rgb(0 0 0 / 5%);
 }
 
 
@@ -108,13 +179,7 @@ body{
   }
 
 }
-}
 
-.row{
-  max-width: 90%;
-  margin: 0 auto;
-  /*border: 2px solid red; */
-}
 
 /* ===============================footer section========================= */
 footer{
@@ -122,12 +187,12 @@ footer{
   padding: 2.5rem 0;
 }
 h3{
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
 p{
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -154,7 +219,7 @@ p{
 }
 
 .footer_column_b ul li{
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
 }

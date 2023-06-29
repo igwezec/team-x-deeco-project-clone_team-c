@@ -153,16 +153,15 @@ nav .left-nav{
   justify-content: center;
 }
 .proceed-to-cart-button a{
-  color: #FFFFFF;
-  font-size: 1rem;
+  color: rgb(112, 191, 86);
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   width: 30%;
   text-decoration: none;
   padding: 1rem;
-  background-color: rgb(112, 191, 86);
+  border: 3px solid rgb(112, 191, 86);
   border-radius: 5px;
-  box-shadow: 0 0 15px 2px rgb(0 0 0 / 5%);
 }
 
 

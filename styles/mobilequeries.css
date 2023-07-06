@@ -68,6 +68,24 @@ body{
     text-align: center;
   }
 
+  /* ===============Admin page ================== */
+  .withdraw-wrapper .withdraw_wallet-card{
+    width: 90%;
+    height: 40%;
+  }
+  .withdraw_wallet-card h1{
+    font-size: 1.3rem;
+  }
+  
+  .withdraw_wallet-card a{
+    margin-top: 1rem;
+    font-size: 14px;
+    background-color: rgb(112, 191, 86);
+    border-radius: 5px;
+    width: 80%;
+    padding: 0.6rem 2rem;
+  }
+
 
   /* ==================== Footer  ==================== */
   .footer_wrapper{

@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles/mobilequeries.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home | Deeco</title>
   </head>
@@ -23,8 +24,13 @@
           </div>
           <div class="top-nav-cart">
             <a href="/">create a store</a>
-            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C1.44772 2 1 2.44772 1 3C1 3.55228 1.44772 4 2 4H2.47241C2.92336 4 3.31852 4.30182 3.43717 4.73688L3.85342 6.26312L6 14.1339V16C6 16.6935 6.23533 17.3321 6.63048 17.8402C6.23824 18.2816 6 18.863 6 19.5C6 20.8807 7.11929 22 8.5 22C9.88071 22 11 20.8807 11 19.5C11 19.3288 10.9828 19.1616 10.95 19H14.05C14.0172 19.1616 14 19.3288 14 19.5C14 20.8807 15.1193 22 16.5 22C17.8807 22 19 20.8807 19 19.5C19 19.1715 18.9366 18.8578 18.8215 18.5704C18.934 18.4086 19 18.212 19 18C19 17.4477 18.5523 17 18 17H16.5H9C8.44772 17 8 16.5523 8 16V15H18.236C19.1381 15 19.9285 14.3962 20.1657 13.5258L21.8007 7.52583C22.1473 6.25364 21.1896 5 19.871 5H5.58198L5.3667 4.21065C5.01074 2.90547 3.82526 2 2.47241 2H2ZM16.5 19C16.2239 19 16 19.2239 16 19.5C16 19.7761 16.2239 20 16.5 20C16.7761 20 17 19.7761 17 19.5C17 19.2239 16.7761 19 16.5 19ZM18.236 13H7.7638L6.12743 7H19.871L18.236 13ZM8.5 19C8.22386 19 8 19.2239 8 19.5C8 19.7761 8.22386 20 8.5 20C8.77614 20 9 19.7761 9 19.5C9 19.2239 8.77614 19 8.5 19Z" fill="#ffffff"></path> </g></svg>
-            <!-- <i class="fa-sharp fa-solid fa-moon-stars"></i> -->
+
+            <span class="cart-icon">
+              <a href="/cart/">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C1.44772 2 1 2.44772 1 3C1 3.55228 1.44772 4 2 4H2.47241C2.92336 4 3.31852 4.30182 3.43717 4.73688L3.85342 6.26312L6 14.1339V16C6 16.6935 6.23533 17.3321 6.63048 17.8402C6.23824 18.2816 6 18.863 6 19.5C6 20.8807 7.11929 22 8.5 22C9.88071 22 11 20.8807 11 19.5C11 19.3288 10.9828 19.1616 10.95 19H14.05C14.0172 19.1616 14 19.3288 14 19.5C14 20.8807 15.1193 22 16.5 22C17.8807 22 19 20.8807 19 19.5C19 19.1715 18.9366 18.8578 18.8215 18.5704C18.934 18.4086 19 18.212 19 18C19 17.4477 18.5523 17 18 17H16.5H9C8.44772 17 8 16.5523 8 16V15H18.236C19.1381 15 19.9285 14.3962 20.1657 13.5258L21.8007 7.52583C22.1473 6.25364 21.1896 5 19.871 5H5.58198L5.3667 4.21065C5.01074 2.90547 3.82526 2 2.47241 2H2ZM16.5 19C16.2239 19 16 19.2239 16 19.5C16 19.7761 16.2239 20 16.5 20C16.7761 20 17 19.7761 17 19.5C17 19.2239 16.7761 19 16.5 19ZM18.236 13H7.7638L6.12743 7H19.871L18.236 13ZM8.5 19C8.22386 19 8 19.2239 8 19.5C8 19.7761 8.22386 20 8.5 20C8.77614 20 9 19.7761 9 19.5C9 19.2239 8.77614 19 8.5 19Z" fill="#ffffff"></path> </g></svg>
+              </a>
+              <p>0</p>
+            </span>
           </div>
         </div>
         
@@ -36,13 +42,16 @@
           <h3 class="deeco_logo"><em>Deeco.</em></h3>
 
           <ul>
-            <svg width="25px" height="25px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z" fill="#000000"></path></g></svg>
-            <li>All products</li>
-            <li>Today's deals</li>
-            <li>Electronics</li>
-            <li>Accessories</li>
-            <li>Deeco fashion</li>
-            <li>Home and kitchen</li>
+            <a href="/index.html">
+              <svg width="25px" height="25px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z" fill="#000000"></path></g></svg>
+            </a>
+            
+            <li><a href="/all-products/">All products</a></li>
+            <li><a href="/coins-watchlist/">Today's deals</a></li>
+            <li><a href="/trending-coins-watchlist/">Electronics</a></li>
+            <li><a href="/blog/">Accessories</a></li>
+            <li><a href="/policy/">Deeco fashion</a></li>
+            <li><a href="/about/">Home and kitchen</a></li>
           </ul>
         </div>
 
@@ -61,13 +70,16 @@
       <section class="product-section">
         <div class="product-container">
           <div class="product-title">
-            <h1 class="title-heading">Trending Products</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              minima aliquam est vel placeat quo mollitia? Ut, quis veniam enim
-              pariatur reiciendis iste, voluptatem quos laboriosam expedita vero
-              et dicta?
-            </p>
+            <div class="product_title-content">
+              <h1 class="title-heading">Trending Products</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+                minima aliquam est vel placeat quo mollitia? Ut, quis veniam enim
+                pariatur reiciendis iste, voluptatem quos laboriosam expedita vero
+                et dicta?
+              </p>
+            </div>
+            
           </div>
 
           <div class="product_section-wrapper">
@@ -76,7 +88,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/jacket.webp" alt="jacket" />
+                <img src="./assets/images/jacket.webp" alt="jacket" />
               </div>
               <h3>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Lapt...</h3>
               <p class="product-card-para">
@@ -92,7 +104,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/shirt.webp" alt="shirt" />
+                <img src="./assets/images/shirt.webp" alt="shirt" />
               </div>
               <h3>Mens Casual Premium Slim Fit T-Shirts.</h3>
               <p class="product-card-para">
@@ -108,7 +120,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/obo.webp" alt="obo" />
+                <img src="./assets/images/obo.webp" alt="obo" />
               </div>
               <h3>Mens Cotton Jacket</h3>
               <p class="product-card-para">
@@ -124,7 +136,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/turtlrL.webp" alt="turtlrL" />
+                <img src="./assets/images/turtlrL.webp" alt="turtlrL" />
               </div>
               <h3>Mens Casual Slim Fit</h3>
               <p class="product-card-para">
@@ -140,7 +152,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/micropave.webp" alt="micropave" />
+                <img src="./assets/images/micropave.webp" alt="micropave" />
               </div>
               <h3>John Hardy Women's Legends Naga Gold & Silver Drag...</h3>
               <p class="product-card-para">
@@ -156,7 +168,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/wrist.webp" alt="wrist" />
+                <img src="./assets/images/wrist.webp" alt="wrist" />
               </div>
               <h3>Solid Gold Petite Micropave</h3>
               <p class="product-card-para">
@@ -172,7 +184,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/ring.webp" alt="ring" />
+                <img src="./assets/images/ring.webp" alt="ring" />
               </div>
               <h3>White Gold Plated Princess</h3>
               <p class="product-card-para">
@@ -188,7 +200,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/ringer.webp" alt="ringer" />
+                <img src="./assets/images/ringer.webp" alt="ringer" />
               </div>
               <h3>Pierced Owl Rose Gold Plated Stainless Steel Doubl...</h3>
               <p class="product-card-para">
@@ -204,7 +216,7 @@
             <div class="product-card">
               <p class="product-card-title">men's clothing</p>
               <div class="product-card-image">
-                <img src="./assests/images/harddrive.webp" alt="harddrive" />
+                <img src="./assets/images/harddrive.webp" alt="harddrive" />
               </div>
               <h3>WD 2TB Elements Portable External Hard Drive - USB...</h3>
               <p class="product-card-para">
@@ -227,13 +239,12 @@
         </div>
       </section>
   
-
       <!-- =================footer section============= -->
       <footer>
         <div class="row footer_wrapper">
           <div class="footer_column">
             <h3 class="deeco_logo"><em>Deeco.</em></h3>
-            <p>
+            <p class="footer_para">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Doloremque quas laborum pariatur distinctio, amet illo repellat
               dolor porro dolorem natus in quasi delectus tempore itaque
@@ -248,7 +259,7 @@
           </div>
 
           <div class="footer_column_b">
-            <h3>Services</h3>
+            <h3 class="footer_heading-title">Services</h3>
             <ul>
               <li><a href="#">Crypto</a></li>
               <li><a href="#">Forex</a></li>
@@ -258,7 +269,7 @@
           </div>
 
           <div class="footer_column_b">
-            <h3>Help</h3>
+            <h3 class="footer_heading-title">Help</h3>
             <ul>
               <li><a href="#">FAQs</a></li>
               <li><a href="#">Security</a></li>
@@ -267,7 +278,7 @@
           </div>
 
           <div class="footer_column_b">
-            <h3>Transparency</h3>
+            <h3 class="footer_heading-title">Transparency</h3>
             <ul>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms & Conditions</a></li>
@@ -276,8 +287,8 @@
           </div>
 
           <div class="footer_column">
-            <h3>Newsletter</h3>
-            <p>
+            <h3 class="footer_heading-title">Newsletter</h3>
+            <p class="footer_para">
               Join our newsletter, and get a weekly update of our awesome new
               products and bonus offers
             </p>

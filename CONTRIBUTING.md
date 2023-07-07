@@ -12,7 +12,7 @@
 
 > There must not be any spaces between each word. Replace spaces with dashes(hyphens) except the one after the issue number that must be an underscore. 4. Handle the issue on a new branch created and make a pull request.
 
-> ENSURE TO MAKE A PULL REQUEST FOR EVERY ISSUE YOU RESOLVE/HANDLE.
+> ENSURE TO MAKE A PULL REQUEST FOR EVERY ISSUE YOU RESOLVE/HANDLE.ad
 
 # Commit patterns.
 
